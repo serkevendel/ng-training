@@ -19,4 +19,10 @@ export class UserService {
     );
   }
 
+  public updateUser(user: User): Observable<Response> {
+    return this._http.patch<Response>(
+      environment.apiEndpoint + '/user/'+user.id,
+      user
+    );
+  }
 }

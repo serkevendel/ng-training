@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
   { path: 'task', loadChildren: 'app/task/task.module#TaskModule', canActivate: [AuthGuard] },
-  { path: '**', component: NotFoundComponent }
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
