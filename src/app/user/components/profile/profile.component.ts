@@ -35,7 +35,7 @@ export class ProfileComponent implements OnInit {
     this._profileService.update(user).subscribe(
       () => {
         this._authService.logout();
-        this._router.navigate(['/']);
+        this._router.navigate(['/user/login']);
       },
       (error: any) => {
         console.log(error);

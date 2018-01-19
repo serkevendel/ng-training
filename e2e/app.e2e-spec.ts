@@ -9,6 +9,6 @@ describe('ng-training App', () => {
 
   it('should display home works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('home works!');
+    expect(page.getParagraphText()).toEqual('Home');
   });
 });
